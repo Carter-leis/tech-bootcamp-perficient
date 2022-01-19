@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class TechbootcampCarterleisingApplication {
-
+	
 	public static void main(String[] args) {
-		SpringApplication.run(TechbootcampCarterleisingApplication.class, args);
+		SpringApplication.run(TechbootcampCarterleisingApplication.class);
 	}
-
+	
 }

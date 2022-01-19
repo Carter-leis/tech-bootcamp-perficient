@@ -11,12 +11,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class HockeyStatsTests {
-	private static HockeyStats stats;
-	private static final Logger logger = LogManager.getLogger(HockeyStats.class);
+	private static Player stats;
+	private static final Logger logger = LogManager.getLogger(Player.class);
 	
 	@BeforeEach
 	void setUp() {
-		stats = new HockeyStats(4, 10, "Carter", 37, 5);
+		stats = new Player(4, 10, "Carter", 37, 5, 30);
 		
 	}
 	
