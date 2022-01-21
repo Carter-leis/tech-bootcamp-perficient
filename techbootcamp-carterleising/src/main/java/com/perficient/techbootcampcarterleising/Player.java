@@ -20,8 +20,8 @@ public class Player {
 	private String name;
 	@Column(name = "shots")
 	private int shots;
-	//@Column(name = "plusMinus")
-	//private int plusMinus;
+	@Column(name = "pm")
+	private int plusMinus;
 	@Column(name = "gp")
 	private int gp;
 	
@@ -31,7 +31,10 @@ public class Player {
 	        "Player[id= " + id + ", Name= " + name + ", Goals= " + goals + ", Assists= " + assists + ", Shots= " + shots + "]");
 	  }
 	
-/*	public Player(int numGoals, int numAssists, String newName, int numShots, int valPlusMinus, int gp) {
+	public Player() {}
+	
+	public Player(int id, int numGoals, int numAssists, String newName, int numShots, int gp, int valPlusMinus) {
+		this.id = id;
 		this.assists = numAssists;
 		this.goals = numGoals;
 		this.name = newName;
@@ -55,13 +58,43 @@ public class Player {
 		return shots;
 	}
 
-	public int getPlusMinus() {
-		return plusMinus;
-	}
-
 	public int getGp() {
 		return gp;
 	}
-*/
+	
+	public int getPlusMinus() {
+		return plusMinus;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public void setGoals(int goals) {
+		this.goals = goals;
+	}
 
+	public void setAssists(int assists) {
+		this.assists = assists;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setShots(int shots) {
+		this.shots = shots;
+	}
+
+	public void setGp(int gp) {
+		this.gp = gp;
+	}
+	
+	public void setPlusMinus(int plusMinus) {
+		this.plusMinus = plusMinus;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
 }
