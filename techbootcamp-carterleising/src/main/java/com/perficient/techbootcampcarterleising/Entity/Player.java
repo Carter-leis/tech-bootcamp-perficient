@@ -1,4 +1,4 @@
-package com.perficient.techbootcampcarterleising;
+package com.perficient.techbootcampcarterleising.Entity;
 
 import javax.persistence.*;
 import javax.persistence.GeneratedValue;
@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Table(name = "stats")
 public class Player {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	//@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name = "id")
 	private Integer id;
 	@Column(name = "goals")
